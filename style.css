@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 1));
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    margin: 2rem;
+    text-align: center;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 50px;
+    background-image: radial-gradient(circle, #ffe234, #de9438, #a0573a, #522a2a, #000000, #000000, #000000, #000000);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.container-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    width: 400px;
+    border-radius: 2rem;
+    align-self: center;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+.movie-info table {
+    min-width: 50%;
+    max-width: 900px;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(255, 224, 51, 0.302);
+    margin: 4rem;
+    text-align: justify;
+}
+
+.movie-info table th,
+td {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.movie-info tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.controls-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: center;
+}
+
+.nav-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 224, 51);
+    border-color: rgb(255, 226, 52);
+    font-size: 0.8rem;
+    margin: 1rem;
+    padding: 0.25rem 0.5rem;
+    width: 100px;
+    height: 50px;
+}
+
+#prev-button {
+    border-radius: 25px 5px 5px 25px;
+}
+
+#next-button {
+    border-radius: 5px 25px 25px 5px;
+}
+
+#prev-button:hover,
+#next-button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 110px;
+    height: 55px;
+}
+
+#prev-button:disabled,
+#next-button:disabled {
+    cursor: not-allowed;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+}
+
+#prev-button:disabled:hover,
+#next-button:disabled:hover {
+    width: 100px;
+    height: 50px;
+}
+
+@media (max-width: 800px) {
+    .container-all {
+        flex-direction: column;
+    }
+
+    .banner img {
+        width: 100px;
+        height: 100%;
+    }
+}
