@@ -11,7 +11,7 @@ body {
     font-family: 'Mulish', sans-serif;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 1));
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 header {
@@ -31,7 +31,13 @@ header {
     background-position: center center;
 }
 
-.container-all {
+.instructions {
+    margin: auto 0.8rem;
+    text-align: center;
+}
+
+.container-all,
+.controls-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -39,7 +45,8 @@ header {
 }
 
 .banner img {
-    width: 400px;
+    width: 300px;
+    margin: 1rem auto 0.5rem auto;
     border-radius: 2rem;
     align-self: center;
 }
@@ -47,14 +54,14 @@ header {
 .movie-info {
     display: flex;
     flex-direction: column;
-    width: 900px;
+    width: 100%;
 }
 
 .movie-info table {
     min-width: 50%;
-    max-width: 900px;
+    max-width: 100%;
     box-shadow: 0.1rem 0.1rem 0.1rem rgba(255, 224, 51, 0.302);
-    margin: 4rem;
+    margin: 1rem;
     text-align: justify;
 }
 
@@ -66,13 +73,6 @@ td {
 
 .movie-info tr:hover {
     background-color: rgba(255, 255, 255, 0.2);
-}
-
-.controls-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: center;
 }
 
 .nav-button {
@@ -123,6 +123,9 @@ td {
 
     .banner img {
         width: 100px;
-        height: 100%;
+    }
+
+    .movie-info table th {
+        vertical-align: text-top;
     }
 }
